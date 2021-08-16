@@ -45,8 +45,17 @@ nav {
     background-color: white;
 }
 
+nav > li, header ul {
+    list-style-type: none;
+}
+
+nav > li a {
+    display: block;
+    line-height:100px;
+}
+
 nav img {
-    width: 8%;
+    padding-top: 28%;
 }
 
 header ul {
@@ -54,21 +63,20 @@ header ul {
     width: 32%;
     margin: 0;
     padding: 0;
-    list-style-type: none;
 }
 
-header li {
+header ul > li {
     height: 100px;
     width: 33%;
     display: flex;
     align-items: center;
 }
 
-header li:first-child {
+header ul > li:first-child {
     margin-right: 6%;
 }
 
-header li a {
+header ul > li a {
     display: block;
     width: 100%;
     line-height:100px;
@@ -79,7 +87,7 @@ header li a {
     transition: border-top 200ms ease;
 }
 
-header li a:hover, .active {
+header ul > li a:hover, .active {
     border-top: solid 3px #0065FC;
 }
 
@@ -95,6 +103,7 @@ header h1 {
 /* main section {
     height: 500px;
 } */
+
 
 /**** Header-Media queries ****/
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {

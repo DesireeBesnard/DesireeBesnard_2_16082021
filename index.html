@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
 </head>
@@ -14,7 +15,7 @@
     <header class="container">
 
         <nav class="dflex jc-sb">
-            <img src="assets/logo/Reservia.svg" alt="logo picture">
+            <li><a href="#"><img src="assets/logo/Reservia.svg" alt="logo picture"></a></li>
 
             <ul class="dflex jc-se ai-c">
                 <li><a href="#hebergements">Hébergements</a></li>
@@ -25,6 +26,19 @@
 
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
+
+        <form class="dflex" action="GET" method="get">
+            <div class="googleMaps">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="searchInput">
+                <input type="search" name="searchCity" id="searchCity">
+                <label class="form-label" for="searchCity"></label>
+            </div>
+            <div>
+                <button type="button">Rechercher</button>
+            </div>
+        </form>
     </header>
 
     <!-- example to check if the scrollspy is working -->
