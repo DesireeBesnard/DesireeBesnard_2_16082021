@@ -7,6 +7,7 @@ html, body {
     margin:0;
     padding:0;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -36,6 +37,13 @@ html, body {
 
 
 /***** header *****/
+nav {
+    position: fixed;
+    top: 0 ;
+    width: 93%;
+    background-color: white;
+}
+
 nav img {
     width: 8%;
 }
@@ -50,23 +58,35 @@ header ul {
 
 header li {
     height: 100%;
+    width: 33%;
     display: flex;
     align-items: center;
-    text-align: center;
-    padding: 0 5%;
-    border-top: solid 3px transparent;
-}
-
-header li:hover {
-    border-top: solid 3px #0065FC;
 }
 
 header li a {
+    display: block;
+    width: 100%;
+    line-height:100px;
     text-decoration: none;
+    text-align: center;
     color: black;
+    border-top: solid 3px transparent;
+    transition: border-top 200ms ease;
+}
+
+header li a:hover {
+    border-top: solid 3px #0065FC;
 }
 
 #signUp {
     color:#0065FC;
     font-weight: bold;
+}
+
+header h1 {
+    margin-top: 100px;
+}
+
+main section {
+    height: 500px;
 }
