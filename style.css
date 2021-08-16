@@ -6,9 +6,9 @@
 html, body {
     margin:0;
     padding:0;
+    scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    scroll-behavior: smooth;
 }
 
 
@@ -68,8 +68,6 @@ header ul {
 header ul > li {
     height: 100px;
     width: 33%;
-    display: flex;
-    align-items: center;
 }
 
 header ul > li:first-child {
@@ -100,12 +98,7 @@ header h1 {
     margin-top: 140px;
 }
 
-/* main section {
-    height: 500px;
-} */
-
-
-/**** Header-Media queries ****/
+/**** Header Media queries ****/
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     header ul {
         width: 50%;
@@ -117,3 +110,7 @@ header h1 {
         width: 40%;
     }
 }
+
+/* main section {
+    height: 500px;
+} */
