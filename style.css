@@ -85,7 +85,7 @@ header ul > li a {
     transition: border-top 200ms ease;
 }
 
-header ul > li a:hover, .active {
+header ul > li a:hover {
     border-top: solid 3px #0065FC;
 }
 
@@ -111,6 +111,7 @@ header h1 {
     }
 }
 
-/* main section {
+main section {
     height: 500px;
-} */
+    padding-top: 140px;
+}
