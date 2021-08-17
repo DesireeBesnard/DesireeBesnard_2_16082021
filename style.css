@@ -51,41 +51,45 @@ nav > li, header ul {
 
 nav > li a {
     display: block;
-    line-height:100px;
+    line-height:65px;
 }
 
 nav img {
     padding-top: 28%;
 }
 
-header ul {
+.mobile {
+    display: none;
+}
+
+.desktop {
     height: 100px;
     width: 32%;
     margin: 0;
     padding: 0;
 }
 
-header ul > li {
+.desktop > li {
     height: 100px;
     width: 33%;
 }
 
-header ul > li:first-child {
+.desktop > li:first-child {
     margin-right: 6%;
 }
 
-header ul > li a {
+.desktop > li a {
     display: block;
     width: 100%;
     line-height:100px;
     text-decoration: none;
     text-align: center;
     color: black;
-    border-top: solid 3px transparent;
+    border-top: solid 3px #F2F2F2;
     transition: border-top 200ms ease;
 }
 
-header ul > li a:hover {
+.desktop > li a:hover {
     border-top: solid 3px #0065FC;
 }
 
@@ -99,14 +103,102 @@ header h1 {
 }
 
 /**** Header Media queries ****/
+@media only screen and (max-width: 767.98px) {
+
+    nav > li a {
+        line-height: 41px;
+    }
+
+    nav img {
+        padding-top: 20%;
+    }
+
+    .desktop {
+        height: 80px;
+    }
+    
+    .desktop > li {
+        width: 70%;
+    }
+
+    .mobile > li a {
+        line-height:62px;
+    }
+
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-    header ul {
+
+    nav > li a {
+        line-height: 35px;
+    }
+
+    .desktop {
+        height: 85px;
+    }
+
+    .desktop > li a {
+        line-height: 85px;
+    }
+    
+    
+    .mobile > li a {
+        line-height:66px;
+    }
+        
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    .desktop {
+        justify-content: flex-end;
+    }
+
+    .desktop li:first-child, .desktop li:nth-child(2) {
+        display: none;
+    }
+
+    .desktop > li a {
+        border: none;
+    }
+
+    .desktop > li a:hover {
+        border: none;
+    }
+
+    .mobile {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile li {
         width: 50%;
+    }
+
+    .mobile > li a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        border-bottom: solid 3px #F2F2F2;
+        transition: border-bottom 200ms ease;
+    }
+
+    .mobile > li a:hover {
+        border-bottom: solid 3px #0065FC;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    header ul {
+    .desktop {
         width: 40%;
     }
 }

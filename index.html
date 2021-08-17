@@ -18,10 +18,14 @@
         <nav class="dflex jc-sb">
             <li class="dflex ai-c"><a href="#"><img src="assets/logo/Reservia.svg" alt="logo picture"></a></li>
 
-            <ul class="dflex jc-se ai-c">
+            <ul class="dflex jc-se ai-c desktop">
                 <li><a href="#hebergements">Hébergements</a></li>
                 <li><a href="#activites">Activités</a></li>
-                <li><a id="signUp" href="#inscription">S'inscrire</a></li>
+                <li><a id="signUp" href="#">S'inscrire</a></li>
+            </ul>
+            <ul class="mobile">
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
 
@@ -33,7 +37,7 @@
                 <i class="fas fa-map-marker-alt"></i>
             </div>
             <div class="searchInput">
-                <input type="search" name="searchCity" id="searchCity">
+                <input type="search" name="searchCity" placeholder="Marseille" id="searchCity">
                 <label class="form-label" for="searchCity"></label>
             </div>
             <div>
@@ -48,10 +52,8 @@
     <main class="container">
         <section id="hebergements" data-spy>Hébergements</section>
         <section id="activites" data-spy>Activités</section>
-        <section id="inscription" data-spy>S'inscrire</section>
     </main>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
