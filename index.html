@@ -32,16 +32,39 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <form class="dflex" action="GET" method="get">
-            <div class="googleMaps">
-                <i class="fas fa-map-marker-alt"></i>
+
+        <form action="" method="GET">
+            <div class="dflex searchBar" action="" method="get">
+                <div class="dflex jc-c ai-c googleMaps">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="searchInput">
+                    <input type="search" name="searchCity" placeholder="Marseille, France" id="searchCity">
+                    <label class="form-label" for="searchCity"></label>
+                </div>
+                <div class="buttonDiv">
+                    <button type="button">Rechercher</button>
+                </div>
             </div>
-            <div class="searchInput">
-                <input type="search" name="searchCity" placeholder="Marseille" id="searchCity">
-                <label class="form-label" for="searchCity"></label>
-            </div>
-            <div>
-                <button type="button">Rechercher</button>
+    
+            <div class="dflex filters">
+                <p>Filtres</p>
+                <div class="filter">
+                   <div><i class="fas fa-money-bill-wave"></i></div>
+                   <span>Économique</span> 
+                </div>
+                <div class="filter">
+                   <div><i class="fas fa-child"></i></div>
+                   <span>Familial</span> 
+                </div>
+                <div class="filter">
+                   <div><i class="fas fa-heart"></i></div>
+                   <span>Romantique</span> 
+                </div>
+                <div class="filter">
+                   <div><i class="fas fa-dog"></i></div>
+                   <span>Animaux autorisés</span> 
+                </div>
             </div>
         </form>
 
