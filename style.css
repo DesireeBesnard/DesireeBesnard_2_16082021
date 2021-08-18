@@ -29,6 +29,10 @@ html, body {
     justify-content: center;
 }
 
+.jc-sb {
+    justify-content: space-between;
+}
+
 .ai-c {
     align-items: center;
 }
@@ -42,23 +46,30 @@ html, body {
 
 
 /***** header *****/
-nav {
+menu {
+    margin: 0;
+    padding: 0;
     position: fixed;
     top: 0 ;
     width: 93%;
     background-color: white;
 }
 
-nav > li, header ul {
+menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+menu > li, header ul {
     list-style-type: none;
 }
 
-nav > li a {
+menu > li a {
     display: block;
     line-height:65px;
 }
 
-nav img {
+menu img {
     padding-top: 28%;
 }
 
@@ -146,11 +157,6 @@ header h1 {
 
 .searchInput input::placeholder {
     color: black;
-}
-
-.searchInput input:focus-visible {
-    /* outline: #0065FC solid 2px; */
-    outline: linear-gradient(to right, red, purple);
 }
 
 .searchInput input::-webkit-search-cancel-button {
@@ -243,12 +249,11 @@ button:hover {
 
 /**** Header Media queries ****/
 @media only screen and (max-width: 767.98px) {
-
-    nav > li a {
+    menu > li a {
         line-height: 41px;
     }
 
-    nav img {
+    menu img {
         padding-top: 20%;
     }
 
@@ -276,7 +281,7 @@ button:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
 
-    nav > li a {
+    menu > li a {
         line-height: 35px;
     }
 
@@ -301,7 +306,7 @@ button:hover {
 
 @media only screen and (max-width: 991.98px) {
     
-    nav {
+    menu {
         flex-wrap: wrap;
     }
     
@@ -365,7 +370,23 @@ button:hover {
     }
 }
 
-main section {
-    height: 500px;
-    padding-top: 140px;
+
+/***** main -> accomodation/popular *****/
+
+.accomodations, .popular {
+    padding: 0 20px;
+    background-color:#F2F2F2;
+}
+
+.accomodations {
+    width: 60%;
+}
+
+.accomodationsCards > div {
+    height: 190px;
+    width: 242px;
+}
+
+.popular {
+    width: 30%;
 }
