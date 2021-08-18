@@ -142,7 +142,6 @@ header h1 {
 
 .searchInput input {
     padding-left: 10px;
-    position: relative;
 }
 
 .searchInput input::placeholder {
@@ -187,6 +186,7 @@ button:hover {
     border-radius: 30px;
     position: relative;
     margin-right: 2%;
+    z-index: -1;
 }
 
 .filter div:first-child {
@@ -247,6 +247,14 @@ button:hover {
         line-height:62px;
     }
 
+    header h1 {
+        margin-top: 185px;
+    }
+
+    #searchCity, .buttonDiv button {
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -267,8 +275,11 @@ button:hover {
     .mobile > li a {
         line-height:66px;
     }
-        
 
+    header h1 {
+        margin-top: 194px;
+    }
+        
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -316,6 +327,18 @@ button:hover {
 
     .mobile > li a:hover {
         border-bottom: solid 3px #0065FC;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .filters > p {
+        width: 100%;
+    }
+
+    .filter {
+        margin: 0 2% 2% 0;
     }
 }
 
