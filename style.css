@@ -124,6 +124,10 @@ header h1 {
     border: 2px solid #F2F2F2;
 }
 
+#searchCity, .buttonDiv button {
+    font-size: 16px;
+}
+
 .buttonDiv {
     width: 32%;
 }
@@ -138,6 +142,7 @@ header h1 {
 
 .searchInput input {
     padding-left: 10px;
+    position: relative;
 }
 
 .searchInput input::placeholder {
@@ -149,10 +154,20 @@ header h1 {
     outline: linear-gradient(to right, red, purple);
 }
 
+.searchInput input::-webkit-search-cancel-button {
+    position: relative;
+    right: 2%;
+}
+
 button {
     background-color: #0065FC;
     color: white;
     border-radius: 0 15px 15px 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 .filters {
@@ -194,6 +209,13 @@ button {
     border: 2px solid #F2F2F2;
     display:flex;
     align-items: center;
+    transition: all 200ms ease-in-out;
+    transition-property: background-color, color;
+}
+
+.filter div:last-child:hover {
+    background-color: #0065FC;
+    color: white;
 }
 
 .filter p {
