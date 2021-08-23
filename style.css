@@ -37,10 +37,6 @@ html, body {
     justify-content: center;
 }
 
-.jc-sb {
-    justify-content: space-between;
-}
-
 .ai-c {
     align-items: center;
 }
@@ -54,31 +50,33 @@ html, body {
 
 
 /***** header *****/
-menu {
-    margin: 0;
-    padding: 0;
+nav {
+    box-sizing: border-box;
+    padding: 0 3%;
     position: fixed;
-    top: 0 ;
-    width: 93%;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: white;
     z-index: 1;
+
 }
 
-menu ul {
+nav ul {
     margin: 0;
     padding: 0;
 }
 
-menu > li, header ul {
+nav > li, header ul {
     list-style-type: none;
 }
 
-menu > li a {
+nav > li a {
     display: block;
     line-height:65px;
 }
 
-menu img {
+nav img {
     padding-top: 28%;
 }
 
@@ -168,9 +166,10 @@ header h1 {
     color: black;
 }
 
-.searchInput input::-webkit-search-cancel-button {
+.searchInput input:focus {
     position: relative;
     right: 2%;
+    outline: none;
 }
 
 button {
@@ -258,11 +257,11 @@ button:hover {
 
 /**** Header Media queries ****/
 @media only screen and (max-width: 767.98px) {
-    menu > li a {
+    nav > li a {
         line-height: 41px;
     }
 
-    menu img {
+    nav img {
         padding-top: 20%;
     }
 
@@ -290,7 +289,7 @@ button:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
 
-    menu > li a {
+    nav > li a {
         line-height: 35px;
     }
 
@@ -315,7 +314,7 @@ button:hover {
 
 @media only screen and (max-width: 991.98px) {
     
-    menu {
+    nav {
         flex-wrap: wrap;
     }
     
@@ -382,6 +381,11 @@ button:hover {
 
 /***** main -> accomodation/popular *****/
 
+main {
+    width: 93%;
+    margin: auto;
+}
+
 main h2 {
     margin: 0;
 }
@@ -396,31 +400,32 @@ main h2 {
     margin-top: 25px;
 }
 
-#hebergements a, #popular a:not(.popularCards a:last-child) {
+#hebergements a {
     text-decoration: none;
     color: black;
     background-color: white;
     margin-bottom: 30px;
-    border: 5px solid white;
+    border: 5px solid transparent;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
     transition: box-shadow 150ms ease-in-out;
 }
 
 #hebergements a:hover, #popular a:hover {
-    box-shadow: 4px 4px 5px rgb(0 0 0 / 22%);
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 22%);
 }
 
 #hebergements h3 {
-    margin: 0 0 5px 0;
-    font-size: 1rem;
+    margin: 5px 0 5px 0;
+    font-size: 0.9rem;
 }
 
 .cardDetails {
-    padding: 8px 0 8px 15px;
+    padding: 3% 0 0 5%;
+
 }
 
-.cardDetails p:not(.cardDetails .stars) {
+.cardDetails p {
     margin: 5px 0;
     font-size: 0.8rem;
 }
@@ -447,7 +452,7 @@ main h2 {
 }
 
 .accomodationsCards a {
-    width: 225px;   
+    width: 30%;
 }
 
 .thumbnail-accomodation {
@@ -507,4 +512,67 @@ main h2 {
 
 #bleu {
     background-image:url(assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+@media only screen and (max-width: 767.98px) {
+    #hebergements a {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+
+    .cardDetails p  {
+        font-size: 0.7rem;
+    }
+
+    .popular:first-child {
+        padding: 0 1%;
+    }
+
+    .popular a {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    main {
+        width: 100%;
+    }
+
+    #hebergements {
+        flex-direction: column-reverse;
+    }
+
+    .accomodations, .popular {
+        box-sizing: border-box;
+        padding: 45px 3%;
+        border-radius: 0;
+    }
+
+    #hebergements h3 {
+        font-size: 0.8rem;
+    }
+
+    .accomodations {
+        width: 100%;
+        background-color: white;
+    }
+
+    .popular {
+        width: 100%;
+    }
+
+    .popularCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #hebergements h3 {
+        font-size: 0.8rem;
+    }
 }
