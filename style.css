@@ -546,12 +546,12 @@ main h2 {
 
     .accomodations, .popular {
         box-sizing: border-box;
-        padding: 45px 3%;
+        padding: 45px 5%;
         border-radius: 0;
     }
 
     #hebergements h3 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .accomodations {
