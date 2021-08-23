@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font awesome Library -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
 </head>
@@ -18,9 +18,9 @@
         <menu class="dflex jc-sb">
 
             <ul>
-                <li class="dflex ai-c"><a href="#"><img src="assets/logo/Reservia.svg" alt="logo picture"></a></li>
+                <li class="dflex ai-c"><a href="#"><img src="assets/logo/Reservia.svg" alt="brand logo"></a></li>
             </ul>
-            
+
             <ul class="dflex jc-se ai-c desktop">
                 <li><a href="#hebergements">Hébergements</a></li>
                 <li><a href="#activites">Activités</a></li>
@@ -49,24 +49,32 @@
                     <button type="submit">Rechercher</button>
                 </div>
             </div>
-    
+
             <div class="dflex filters">
                 <p>Filtres</p>
                 <div class="filter">
-                   <div><i class="fas fa-money-bill-wave"></i></div>
-                   <div><p>Économique</p> </div>
+                    <div><i class="fas fa-money-bill-wave"></i></div>
+                    <div>
+                        <p>Économique</p>
+                    </div>
                 </div>
                 <div class="filter">
-                   <div><i class="fas fa-child"></i></div>
-                   <div><p>Familial</p> </div>
+                    <div><i class="fas fa-child"></i></div>
+                    <div>
+                        <p>Familial</p>
+                    </div>
                 </div>
                 <div class="filter">
-                   <div><i class="fas fa-heart"></i></div>
-                   <div><p>Romantique</p></div>
+                    <div><i class="fas fa-heart"></i></div>
+                    <div>
+                        <p>Romantique</p>
+                    </div>
                 </div>
                 <div class="filter">
-                   <div><i class="fas fa-dog"></i></div>
-                   <div><p>Animaux autorisés</p> </div> 
+                    <div><i class="fas fa-dog"></i></div>
+                    <div>
+                        <p>Animaux autorisés</p>
+                    </div>
                 </div>
             </div>
         </form>
@@ -79,29 +87,131 @@
 
     <main class="container">
 
-        <div class="dflex jc-sb">
+        <div class="dflex jc-sb" id="hebergements">
+
             <div class="accomodations">
                 <h2>Hébergements à Marseille</h2>
 
                 <div class="dflex accomodationsCards">
-                    <div>
 
-                    </div>
+                    <a href="#">
+                        <div class="thumbnail thumbnail-accomodation" id="cannebiere"></div>
+                        <div class="cardDetails">
+                            <h3>Auberge de la Cannebière</h3>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><span><i
+                                        class="fas fa-star"></i></span></p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="thumbnail thumbnail-accomodation" id="port"></div>
+                        <div class="cardDetails">
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de <strong>52€</strong></p>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        </div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="thumbnail thumbnail-accomodation" id="mouettes"></div>
+                        <div class="cardDetails">
+                            <h3>Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de <strong>76€</strong></p>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><span><i
+                                        class="fas fa-star"></i></span></p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="thumbnail thumbnail-accomodation" id="mer"></div>
+                        <div class="cardDetails">
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de <strong>46€</strong></p>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><span><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span></p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="thumbnail thumbnail-accomodation" id="panier"></div>
+                        <div class="cardDetails">
+                            <h3>Auberge Le Panier</h3>
+                            <p>Nuit à partir de <strong>23€</strong></p>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><span><i
+                                        class="fas fa-star"></i></span></p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="thumbnail thumbnail-accomodation" id="amina"></div>
+                        <div class="cardDetails">
+                            <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de <strong>96€</strong></p>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        </div>
+                    </a>
                 </div>
-
             </div>
 
             <aside class="popular">
-                <div class="dflex">
-                    <h2>Les plus populaires</h2>
+
+                <div class="dflex jc-sb ai-c">
+                    <h2>Les plus populaires </h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
 
-            </aside>
+                <div class="popularCards">
+                    <a class="dflex" href="#">
+                        <div class="thumbnail thumbnail-popular" id="soleil"></div>
+                        <div class="dflex flexClm jc-sa cardDetails">
+                            <div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <strong>128€</strong></p>
+                            </div>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        </div>
+                    </a>
+    
+                    <a class="dflex" href="#">
+                        <div class="thumbnail thumbnail-popular" id="eau"></div>
+                        <div class="dflex flexClm jc-sa cardDetails">
+                            <div>
+                                <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                                <p>Nuit à partir de <strong>71€</strong></p>
+                            </div>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><span><i
+                                    class="fas fa-star"></i></span></p>
+                        </div>
+                    </a>
+    
+                    <a class="dflex" href="#">
+                        <div class="thumbnail thumbnail-popular" id="bleu"></div>
+                        <div class="dflex flexClm jc-sa cardDetails">
+                            <div>
+                                <h3>Hôtel tout bleu et Blanc</h3>
+                                <p>Nuit à partir de <strong>688€</strong></p>
+                            </div>
+                            <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><span><i
+                                    class="fas fa-star"></i></span></p>
+                        </div>
+                    </a>
+                </div>
 
+            </aside>
         </div>
 
-        <div>
+        <div id="activites">
 
         </div>
 

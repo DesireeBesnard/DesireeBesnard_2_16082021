@@ -17,12 +17,20 @@ html, body {
     display: flex;
 }
 
+.flexClm {
+    flex-direction: column;
+}
+
 .jc-sb {
     justify-content: space-between;
 }
 
 .jc-se {
     justify-content: space-evenly;
+}
+
+.jc-sa {
+    justify-content: space-around;
 }
 
 .jc-c {
@@ -53,6 +61,7 @@ menu {
     top: 0 ;
     width: 93%;
     background-color: white;
+    z-index: 1;
 }
 
 menu ul {
@@ -104,7 +113,7 @@ menu img {
     transition: border-top 200ms ease;
 }
 
-.desktop > li a:hover {
+.desktop > li a:not(#signUp):hover {
     border-top: solid 3px #0065FC;
 }
 
@@ -114,7 +123,7 @@ menu img {
 }
 
 header h1 {
-    margin-top: 140px;
+    margin: 140px 0 16px 0;
 }
 
 .searchBar {
@@ -136,7 +145,7 @@ header h1 {
 }
 
 #searchCity, .buttonDiv button {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .buttonDiv {
@@ -191,7 +200,7 @@ button:hover {
     border-radius: 30px;
     position: relative;
     margin-right: 2%;
-    z-index: -1;
+
 }
 
 .filter div:first-child {
@@ -238,11 +247,11 @@ button:hover {
 }
 
 #info i {
-    font-size: 11px;
+    font-size: 0.6rem;
 }
 
 #info + p {
-    margin: 0;
+    margin: 0 0 35px 0;
     vertical-align: baseline;
 }
 
@@ -274,7 +283,7 @@ button:hover {
     }
 
     #searchCity, .buttonDiv button {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
 }
@@ -373,20 +382,129 @@ button:hover {
 
 /***** main -> accomodation/popular *****/
 
-.accomodations, .popular {
-    padding: 0 20px;
-    background-color:#F2F2F2;
+main h2 {
+    margin: 0;
 }
+
+.accomodations, .popular {
+    padding: 45px 20px;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+}
+
+.accomodationsCards, .popularCards {
+    margin-top: 25px;
+}
+
+#hebergements a, #popular a:not(.popularCards a:last-child) {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin-bottom: 30px;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 150ms ease-in-out;
+}
+
+#hebergements a:hover, #popular a:hover {
+    box-shadow: 4px 4px 5px rgb(0 0 0 / 22%);
+}
+
+#hebergements h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+
+.cardDetails {
+    padding: 8px 0 8px 15px;
+}
+
+.cardDetails p:not(.cardDetails .stars) {
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
+
+.thumbnail {
+    background-size: cover;
+    background-position: center;
+}
+
+.stars {
+    margin: 5px 0 0 0;
+    font-size: 0.7rem;
+    color: #0065FC;
+}
+
 
 .accomodations {
     width: 60%;
 }
 
-.accomodationsCards > div {
-    height: 190px;
-    width: 242px;
+.accomodationsCards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.accomodationsCards a {
+    width: 225px;   
+}
+
+.thumbnail-accomodation {
+    height: 115px;
+    border-radius: 20px 20px 0 0;
+}
+
+#cannebiere {
+    background-image:url(assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+#port {
+    background-image:url(assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+#mouettes {
+    background-image:url(assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+#mer {
+    background-image:url(assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+#panier {
+    background-image:url(assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+#amina {
+    background-image:url(assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+
+.cardDetails span {
+    color: #d3d3d3;
 }
 
 .popular {
     width: 30%;
+    padding-top: 45px;
+}
+
+/* overflow-wrap: break-word; */
+
+.thumbnail-popular {
+    min-width: 38%;
+    height: 135px;
+    border-radius: 20px 0 0 20px;
+}
+
+#soleil {
+    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+#eau {
+    background-image:url(assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+#bleu {
+    background-image:url(assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
