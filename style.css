@@ -379,7 +379,7 @@ button:hover {
 }
 
 
-/***** main -> accomodation/popular *****/
+/***** Main -> accomodation/popular *****/
 
 main {
     width: 93%;
@@ -514,6 +514,8 @@ main h2 {
     background-image:url(assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
+/**** Main -> accomodation/popular Media queries ****/
+
 @media only screen and (max-width: 767.98px) {
     #hebergements a {
         width: 100%;
@@ -575,4 +577,64 @@ main h2 {
     #hebergements h3 {
         font-size: 0.8rem;
     }
+}
+
+/***** Main -> activities *****/
+
+#activities > div {
+    justify-content: space-between;
+}
+
+.cols {
+    width: 48%;
+    box-sizing: border-box;
+    height: 445px;
+    justify-content: space-between;
+}
+
+.col {
+    width: 46%;
+    box-sizing: border-box;
+}
+
+.col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cols .thumbnail {
+    border-radius: 20px 20px 0 0;
+}
+
+.high-col {
+    height: 390px;
+}
+
+#vieux-port {
+    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+#fort {
+   height: 180px;
+   background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+#ile {
+    height: 115px;
+    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+#parc {
+    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+#dame {
+    height: 142px;
+    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+#longchamp {
+    height: 153px;
+    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 }
