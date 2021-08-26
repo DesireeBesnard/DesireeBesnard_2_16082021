@@ -585,6 +585,16 @@ main h2 {
     justify-content: space-between;
 }
 
+#activities a {
+    border-radius: 20px 20px 0 0;
+    box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
+    transition: box-shadow 150ms ease-in-out;
+}
+
+#activities a:hover {
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 22%);
+}
+
 .cols {
     width: 48%;
     box-sizing: border-box;
@@ -595,6 +605,17 @@ main h2 {
 .col {
     width: 46%;
     box-sizing: border-box;
+}
+
+.col-left {
+    display: block;
+    box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
+    transition: box-shadow 150ms ease-in-out;
+    border-radius: 20px 20px 0 0;
+}
+
+.col-left:hover {
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 22%);
 }
 
 .col-right {
@@ -612,29 +633,29 @@ main h2 {
 }
 
 #vieux-port {
-    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image:url(assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 
 #fort {
    height: 180px;
-   background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+   background-image:url(assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
 
 #ile {
     height: 115px;
-    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image:url(assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 }
 
 #parc {
-    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image:url(assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
 
 #dame {
     height: 142px;
-    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image:url(assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
 
 #longchamp {
     height: 153px;
-    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image:url(assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
