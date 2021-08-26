@@ -390,8 +390,13 @@ main h2 {
     margin: 0;
 }
 
+main h3 {
+    font-size: 0.9rem;
+}
+
+
 .accomodations, .popular {
-    padding: 45px 20px;
+    padding: 45px 20px 20px 20px;
     background-color:#F2F2F2;
     border-radius: 20px;
 }
@@ -417,7 +422,6 @@ main h2 {
 
 #hebergements h3 {
     margin: 5px 0 5px 0;
-    font-size: 0.9rem;
 }
 
 .cardDetails {
@@ -581,14 +585,21 @@ main h2 {
 
 /***** Main -> activities *****/
 
+#activities {
+    padding: 45px 0;
+}
+
 #activities > div {
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 #activities a {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
     transition: box-shadow 150ms ease-in-out;
+    text-decoration: none;
+    color: black;
 }
 
 #activities a:hover {
@@ -611,7 +622,7 @@ main h2 {
     display: block;
     box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
     transition: box-shadow 150ms ease-in-out;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
 }
 
 .col-left:hover {
@@ -658,4 +669,11 @@ main h2 {
 #longchamp {
     height: 153px;
     background-image:url(assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+
+#activities a div:nth-child(2) {
+    padding-left: 15px;
+    height: 55px;
+    display:flex;
+    align-items: center;
 }
