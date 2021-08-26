@@ -735,6 +735,14 @@ footer li:hover {
     #longchamp {
         height: 135px;
     }
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
     
 }
 
@@ -749,6 +757,10 @@ footer li:hover {
    
     #activities {
         padding: 45px 5%;
+    }
+
+    footer li {
+        font-size: 0.8rem;
     }
 
 }
