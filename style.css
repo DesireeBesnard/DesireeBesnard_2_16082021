@@ -130,7 +130,8 @@ nav img {
 }
 
 header h1 {
-    margin: 140px 0 16px 0;
+    margin: 115px 0 16px 0;
+    font-size: 1.3rem;
 }
 
 .searchBar {
@@ -143,7 +144,7 @@ header h1 {
     width: 12%;
     background-color: #F2F2F2;
     text-align: center;
-    border-radius: 30% 0 0 30%;
+    border-radius: 15px 0 0 15px;
 }
 
 .searchInput { 
@@ -207,7 +208,7 @@ button:hover {
     height: 50px;
     border-radius: 30px;
     position: relative;
-    margin-right: 2%;
+    margin-right: 3%;
 
 }
 
@@ -275,7 +276,7 @@ main h2 {
 }
 
 .accomodations, .popular {
-    padding: 45px 20px 20px 20px;
+    padding: 45px 30px 0 30px;
     background-color:#F2F2F2;
     border-radius: 20px;
 }
@@ -325,7 +326,7 @@ main h2 {
 
 
 .accomodations {
-    width: 60%;
+    width: 59%;
 }
 
 .accomodationsCards {
@@ -334,7 +335,7 @@ main h2 {
 }
 
 .accomodationsCards a {
-    width: 30%;
+    width: 29%;
 }
 
 .thumbnail-accomodation {
@@ -376,7 +377,7 @@ main h2 {
 }
 
 .popular {
-    width: 30%;
+    width: 28%;
     padding-top: 45px;
 }
 
@@ -447,7 +448,7 @@ main h2 {
 
 
 #vieux-port {
-    height: 445px;
+    height: 390px;
     background-image:url(assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 
@@ -462,7 +463,8 @@ main h2 {
 }
 
 #parc {
-    height: 445px;
+    height: 390px;
+    filter: brightness(1.4);
     background-image:url(assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
 
@@ -488,6 +490,10 @@ footer {
     width: 33.3%;
 }
 
+footer h2 {
+    font-size: 1.2rem;
+}
+
 footer li {
     font-size: 0.9rem;
     padding-bottom: 10px;
@@ -501,18 +507,30 @@ footer li:hover {
     padding-bottom: 0;
 }
 
-/**** Header Media queries ****/
+
 @media only screen and (max-width: 687.98px) {
+
+    /**** Header Media queries ****/
+
+    nav {
+        padding: 0;
+    }
+
+    nav ul {
+        height: 70px;
+        padding-left: 3%;
+    }
+
     nav > li a {
         line-height: 41px;
     }
 
     nav img {
-        padding-top: 20%;
+        padding-top: 10%;
     }
 
     .desktop {
-        height: 80px;
+        height: 70px;
     }
     
     .desktop > li {
@@ -531,9 +549,78 @@ footer li:hover {
         font-size: 0.75rem;
     }
 
+    /**** Main -> accomodation/popular Media queries ****/
+
+    #hebergements a {
+        width: 100%;
+    }
+
+    #hebergements h3 {
+        font-size: 1rem;
+    }
+
+    /**** Main -> activities Media queries ****/
+
+    .cols {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col-left {
+        height: auto;
+    }
+
+    #activities a {
+        margin-bottom: 30px;
+    }
+
+    .cols .thumbnail {
+        height: 135px;
+    }
+
+    #vieux-port {
+        height: 135px;
+    }
+    
+    #fort {
+       height: 135px;    }
+    
+    #ile {
+        height: 135px;
+    }
+    
+    #parc {
+        height: 135px;    
+    }
+    
+    #dame {
+        height: 135px;
+    }
+    
+    #longchamp {
+        height: 135px;
+    }
+
+    /**** Footer ****/
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (min-width: 688px) and (max-width: 991.98px) {
+
+    /**** Header Media queries ****/
 
     nav > li a {
         line-height: 35px;
@@ -555,10 +642,32 @@ footer li:hover {
     header h1 {
         margin-top: 194px;
     }
-        
+
+    /**** Main -> accomodation/popular Media queries ****/
+
+    .cardDetails p  {
+        font-size: 0.7rem;
+    }
+
+    .popular:first-child {
+        padding: 0 1%;
+    }
+
+    .popular a {
+        width: 30%;
+    }
+
+    /**** Main -> activities Media queries ****/
+
+    .cols {
+        width: 100%;
+        margin-bottom: 5%;
+    }
 }
 
 @media only screen and (max-width: 991.98px) {
+
+    /**** Header Media queries ****/
     
     nav {
         flex-wrap: wrap;
@@ -615,38 +724,9 @@ footer li:hover {
     .filter {
         margin: 0 2% 2% 0;
     }
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .desktop {
-        width: 40%;
-    }
-}
+    /**** Main -> accomodation/popular Media queries ****/
 
-/**** Main -> accomodation/popular Media queries ****/
-
-@media only screen and (max-width: 687.98px) {
-    #hebergements a {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 688px) and (max-width: 991.98px) {
-
-    .cardDetails p  {
-        font-size: 0.7rem;
-    }
-
-    .popular:first-child {
-        padding: 0 1%;
-    }
-
-    .popular a {
-        width: 30%;
-    }
-}
-
-@media only screen and (max-width: 991.98px) {
     main {
         width: 100%;
     }
@@ -659,10 +739,6 @@ footer li:hover {
         box-sizing: border-box;
         padding: 45px 5%;
         border-radius: 0;
-    }
-
-    #hebergements h3 {
-        font-size: 1rem;
     }
 
     .accomodations {
@@ -679,88 +755,41 @@ footer li:hover {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-}
 
+    /**** Main -> activities Media queries ****/
 
-@media only screen and (min-width: 992px) and (max-width: 1312px) {
-    #hebergements h3 {
-        font-size: 0.8rem;
-    }
-}
-
-/**** Main -> activities Media queries ****/
-
-@media only screen and (max-width: 687.98px) {
-    .cols {
-        width: 100%;
-        flex-wrap: wrap;
-        margin-bottom: 0;
-    }
-
-    .col {
-        width: 100%;
-    }
-
-    .col-left {
-        height: auto;
-    }
-
-    #activities a {
-        margin-bottom: 30px;
-    }
-
-    .cols .thumbnail {
-        height: 135px;
-    }
-
-    #vieux-port {
-        height: 135px;
-    }
-    
-    #fort {
-       height: 135px;    }
-    
-    #ile {
-        height: 135px;
-    }
-    
-    #parc {
-        height: 135px;    
-    }
-    
-    #dame {
-        height: 135px;
-    }
-    
-    #longchamp {
-        height: 135px;
-    }
-
-    footer .container {
-        flex-wrap: wrap;
-    }
-
-    .footer-col {
-        width: 100%;
-    }
-    
-}
-
-@media only screen and (min-width: 688px) and (max-width: 991.98px) {
-    .cols {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-}
-
-@media only screen and (max-width: 991.98px) {
-   
     #activities {
         padding: 45px 5%;
     }
 
+    /**** Footer ****/
+
     footer li {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1312px) {
+
+    /**** Header Media queries ****/
+
+    .desktop {
+        width: 40%;
+    }
+
+    /**** Main -> accomodation/popular Media queries ****/
+
+    .accomodations {
+        width: 59%;
+    }
+
+    .popular {
+        width: 26%;
+    }
+    
+    #hebergements h3, #activities h3 {
         font-size: 0.8rem;
     }
 
 }
+
