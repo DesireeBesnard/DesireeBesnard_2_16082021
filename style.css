@@ -517,7 +517,7 @@ footer li:hover {
     }
 
     nav ul {
-        height: 70px;
+        height: 60px;
         padding-left: 3%;
     }
 
@@ -530,7 +530,8 @@ footer li:hover {
     }
 
     .desktop {
-        height: 70px;
+        height: 60px;
+        padding-right: 3%;
     }
     
     .desktop > li {
@@ -538,7 +539,7 @@ footer li:hover {
     }
 
     .mobile > li a {
-        line-height:62px;
+        line-height: 50px;
     }
 
     header h1 {
