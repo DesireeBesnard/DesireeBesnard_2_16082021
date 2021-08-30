@@ -193,6 +193,10 @@ button:hover {
     opacity: 0.8;
 }
 
+#mobileButton {
+    display: none;
+}
+
 .filters {
     flex-wrap: wrap;
     font-weight: bold;
@@ -546,8 +550,28 @@ footer li:hover {
         margin-top: 160px;
     }
 
+    .googleMaps {
+        width: 50px;
+    }
+    
+    .searchInput {
+        width: 73%;
+    }
+
+    .buttonDiv {
+        width: 50px;
+    }
+
     #searchCity, .buttonDiv button {
-        font-size: 0.75rem;
+        font-size: 1rem;
+    }
+
+    #desktopButton {
+        display: none;
+    }
+
+    #mobileButton {
+        display: block;
     }
 
     /**** Main -> accomodation/popular Media queries ****/
