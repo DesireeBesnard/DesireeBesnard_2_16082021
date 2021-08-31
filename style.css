@@ -12,12 +12,12 @@ html, body {
 }
 
 
-/**** flexbox ****/
+/**** Main flex box properties used for the layout ****/
 .dflex {
     display: flex;
 }
 
-.flexClm {
+.flex-clm {
     flex-direction: column;
 }
 
@@ -119,11 +119,11 @@ nav img {
     transition: border-top 200ms ease;
 }
 
-.desktop > li a:not(#signUp):hover {
+.desktop > li a:not(#sign-up):hover {
     border-top: solid 3px #0065FC;
 }
 
-#signUp {
+#sign-up {
     color:#0065FC;
     font-weight: bold;
 }
@@ -133,33 +133,33 @@ header h1 {
     font-size: 1.3rem;
 }
 
-.searchBar {
+.searchbar {
     width: 420px;
     height: 50px;
     margin: 20px 0;
 }
 
-.googleMaps {
+.googlemaps {
     width: 12%;
     background-color: #F2F2F2;
     text-align: center;
     border-radius: 15px 0 0 15px;
 }
 
-.searchInput { 
+.search-input { 
     width: 56%;
     border: 2px solid #F2F2F2;
 }
 
-#searchCity, .buttonDiv button {
+#search-city, .button-div button {
     font-size: 1rem;
 }
 
-.buttonDiv {
+.button-div {
     width: 32%;
 }
 
-.searchInput input, .buttonDiv button {
+.search-input input, .button-div button {
     width: 100%;
     height: 100%;
     border: none;
@@ -167,15 +167,15 @@ header h1 {
     font-weight: bold;
 }
 
-.searchInput input {
+.search-input input {
     padding-left: 10px;
 }
 
-.searchInput input::placeholder {
+.search-input input::placeholder {
     color: black;
 }
 
-.searchInput input:focus {
+.search-input input:focus {
     position: relative;
     right: 2%;
     outline: none;
@@ -192,7 +192,7 @@ button:hover {
     opacity: 0.8;
 }
 
-#mobileButton {
+#button-mobile {
     display: none;
 }
 
@@ -284,11 +284,11 @@ main h2 {
     border-radius: 20px;
 }
 
-.accomodationsCards, .popularCards {
+.cards-accomodation, .cards-popular {
     margin-top: 25px;
 }
 
-#hebergements a:not(#displayMore) {
+#hebergements a:not(#displaymore) {
     color: black;
     background-color: white;
     margin-bottom: 30px;
@@ -298,7 +298,7 @@ main h2 {
     transition: box-shadow 150ms ease-in-out;
 }
 
-#hebergements a:not(#displayMore):hover, #popular a:hover {
+#hebergements a:not(#displaymore):hover, #popular a:hover {
     box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
 }
 
@@ -306,12 +306,12 @@ main h2 {
     margin: 5px 0 5px 0;
 }
 
-.cardDetails {
+.card-details {
     padding: 3% 0 0 5%;
 
 }
 
-.cardDetails p {
+.card-details p {
     margin: 5px 0;
     font-size: 0.8rem;
 }
@@ -332,12 +332,12 @@ main h2 {
     width: 59%;
 }
 
-.accomodationsCards {
+.cards-accomodation {
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.accomodationsCards a {
+.cards-accomodation a {
     width: 29%;
 }
 
@@ -371,11 +371,11 @@ main h2 {
 }
 
 
-.cardDetails span {
+.card-details span {
     color: #d3d3d3;
 }
 
-#displayMore {
+#displaymore {
     background-color: transparent;
 }
 
@@ -572,19 +572,19 @@ footer li:hover {
         margin-top: 160px;
     }
 
-    .googleMaps {
+    .googlemaps {
         width: 50px;
     }
     
-    .searchInput {
+    .search-input {
         width: 73%;
     }
 
-    .buttonDiv {
+    .button-div {
         width: 50px;
     }
 
-    #searchCity, .buttonDiv button {
+    #search-city, .button-div button {
         font-size: 1rem;
     }
 
@@ -592,7 +592,7 @@ footer li:hover {
         display: none;
     }
 
-    #mobileButton {
+    #button-mobile {
         display: block;
     }
 
@@ -602,7 +602,7 @@ footer li:hover {
         background-position-y: 65%;
     }
     
-    .cardDetails, #activities h3 {
+    .card-details, #activities h3 {
         padding: 1% 0 1% 5%;
     }
 
@@ -677,7 +677,7 @@ footer li:hover {
 
     /**** Main -> accomodation/popular Media queries ****/
 
-    .cardDetails p  {
+    .card-details p  {
         font-size: 0.7rem;
     }
 
@@ -745,7 +745,7 @@ footer li:hover {
         border-bottom: solid 3px #0065FC;
     }
 
-    .searchBar {
+    .searchbar {
         width: 100%;
     }
 
@@ -782,7 +782,7 @@ footer li:hover {
         width: 100%;
     }
 
-    .popularCards {
+    .cards-popular {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
