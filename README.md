@@ -18,9 +18,9 @@ Reservia is a small agency that offers a vacation planning tool. Their site shou
 3. [Author](#author)
 </details>
 
-## Overview
+## 1. Overview
 
-### About the project
+### 1.1 About the project
 
 The user must be able to:
 - be redirected after clicking the menu to the appropriate section
@@ -29,23 +29,23 @@ The user must be able to:
 - click on the entire surface of accommodation cards
 - View the optimal layout for the site depending on their device's screen size (responsive website)
 
-### Links
+### 1.2 Links
 Desktop template: [Here](#)  
 Mobile template: [Here](#)  
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
-## My process
+## 2. My process
 
-### Built with
+### 2.1 Built with
 - Semantic HTML5
 - Font Awesome (icons)
 - CSS
 - Flexbox (Layout)
 - Desktop-first workflow
 
-### What I learned
+### 2.2 What I learned
 
-#### Use of the Git version management system
+#### 2.2.1 Use of the Git version management system
 
 ##### Configuration
 > git config --global user.name "John Doe"  
@@ -72,9 +72,9 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ##### Deploy a website on GitHub Pages
 
-#### Integrate content according to a mockup
+#### 2.2.2 Integrate content according to a mockup
 - Reproduce a structure in HTML5
 - Add metatags
 - Layout an HTML page with CSS;
 
-#### Implement a responsive interface (Media queries)
+#### 2.2.3 Implement a responsive interface (Media queries)
