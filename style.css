@@ -2,28 +2,28 @@
 CSS FILE STRUCTURE
 
 31  Raleway font
-37  CSS reset
-50  Generals 
-73  Layout 
-105 Header
-107   └── Nav
-179   └── Form
-323 Main
+36  CSS reset
+48  Generals 
+70  Layout 
+101 Header
+      └── Nav
+175   └── Form
+318 Main
       └── Section hebergements
-362       ├── Div accomodations
-438       ├── Aside popular
-466   └── Section activities
-547 Footer
-578 Media queries
+357       ├── Div accomodations
+433       ├── Aside popular
+460   └── Section activities
+540 Footer
+570 Media queries
       └── Cell phones
-580       ├── min-width: 320px and max-width: 479.98px
-598       ├── min-width: 480px and max-width: 687.98px
-616       ├── max-width: 687.98px
+572       ├── min-width: 320px and max-width: 479.98px
+590       ├── min-width: 480px and max-width: 687.98px
+608       ├── max-width: 687.98px
       └── Tablets 
-731       ├── min-width: 688px and max-width: 991.98px  
-774       ├── max-width: 991.98px
+723       ├── min-width: 688px and max-width: 991.98px  
+766       ├── max-width: 991.98px
       └── Desktop
-877       ├── min-width: 992px and max-width: 1312px
+869       ├── min-width: 992px and max-width: 1312px
 
 */
 
@@ -31,7 +31,6 @@ CSS FILE STRUCTURE
     Raleway font
 \*-------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
-
 
 /*-------------------------------------------*\
     CSS reset
@@ -44,7 +43,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
 }
-
 
 /*-------------------------------------------*\
     Generals 
@@ -67,7 +65,6 @@ a {
     text-decoration: none;
     color: black;
 }
-
 
 /*-------------------------------------------*\
     Layout 
@@ -100,7 +97,6 @@ a {
     align-items: center;
 }
 
-
 /*-------------------------------------------*\  
     Header -> Nav
 \*-------------------------------------------*/
@@ -126,7 +122,7 @@ nav > li a {
 }
 
 nav img {
-    padding-top: 28%;
+    padding-top: 33%;
 }
 
 /* desktop menu: won't appear on smallest devices except for the sign-up link */
@@ -318,7 +314,6 @@ button:hover {
     vertical-align: baseline;
 }
 
-
 /*-------------------------------------------*\
     Main -> hebergements
 \*-------------------------------------------*/
@@ -461,7 +456,6 @@ main h2 {
     background-image:url('assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
-
 /*-----------------------*\
     Main -> activities
 \*-----------------------*/
@@ -542,7 +536,6 @@ main h2 {
     background-image:url('assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
 }
 
-
 /*-------------------------------------------*\
     Footer
 \*-------------------------------------------*/
@@ -572,7 +565,6 @@ footer li:hover {
 #confidentiality {
     padding-bottom: 0;
 }
-
 
 /*-------------------------------------------*\
     Media queries
@@ -632,7 +624,7 @@ footer li:hover {
     }
 
     nav img {
-        padding-top: 10%;
+        padding: 10% 0 0 8%;
     }
 
     .desktop {
@@ -642,6 +634,10 @@ footer li:hover {
     
     .desktop > li {
         width: 70%;
+    }
+
+    .desktop > li a {
+        text-align: right;
     }
 
     .mobile > li a {
