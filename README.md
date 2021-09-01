@@ -18,9 +18,9 @@ Reservia is a small agency that offers a vacation planning tool. Their site shou
 3. [Authors](#authors)
 </details>
 
-## 1. Overview
+## Overview
 
-### 1.1 About the project
+### About the project
 
 The user must be able to:
 - be redirected after clicking the menu to the appropriate section
@@ -29,23 +29,23 @@ The user must be able to:
 - click on the entire surface of accommodation cards
 - View the optimal layout for the site depending on their device's screen size (responsive website)
 
-### 1.2 Links
+### Links
 Desktop mockup: [Here](https://github.com/DesireeBesnard/DesireeBesnard_2_16082021/blob/main/assets/desktop-1.png)  
 Mobile mockup: [Here](https://github.com/DesireeBesnard/DesireeBesnard_2_16082021/blob/main/assets/iphone8-1.png)  
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
-## 2. My process
+## My process
 
-### 2.1 Built with
+### Built with
 - Semantic HTML5
 - Font Awesome (icons)
 - CSS
 - Flexbox (Layout)
 - Desktop-first workflow
 
-### 2.2 What I learned
+### What I learned
 
-#### 2.2.1 Use of the Git version management system
+#### Use of the Git version management system
 
 ##### Configuration
 > git config --global user.name "John Doe"  
@@ -72,22 +72,22 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ##### Deploy a website on GitHub Pages
 
-#### 2.2.2 Integrate content according to a mockup
+#### Integrate content according to a mockup
 - Reproduce a structure in HTML5
 - Layout an HTML page with CSS;
 
-#### 2.2.3 Implement a responsive interface (Media queries for cell phones, and tablets)
+#### Implement a responsive interface (Media queries for cell phones, and tablets)
 
-### 2.3 Continued development
+### Continued development
 - Define css variables for better visibility and easier maintenance
 - Use CSS Grid instead of Flexbox
 - Try a mobile-first workflow
 
-### 2.4 Useful ressources
+### Useful ressources
 - [GitHub Guides](https://guides.github.com/) - This helped me understand the Git workflow, learn Markdown and document my projects
 - [The Art of Comments](https://css-tricks.com/the-art-of-comments/) - This article allowed me to understand the importance of comments and gives keys to ensuring their relevance.
 - [What media query breakpoints should you use? ](https://coder-coder.com/media-query-breakpoints/)
 
-## 3. Authors
+## Authors
 - Website - [Désirée Besnard](https://github.com/DesireeBesnard)
 - MockUp - [OpenClassRooms](https://openclassrooms.com/fr/)
