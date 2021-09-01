@@ -4,6 +4,9 @@
 
 ## Table of contents
 
+<details open>
+<summary>Table of contents</summary>
+
 1. [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshots](#screenshots)
@@ -14,5 +17,8 @@
     - [Continued development](#continued-development)
     - [Usefull resources](#usefull-resources)
 3. [Author](#author)
+</details>
 
 ## Overview
+
+### The challenge
