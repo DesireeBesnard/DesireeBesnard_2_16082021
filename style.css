@@ -1,9 +1,43 @@
-/* Raleway font  */
+/** 
+CSS FILE STRUCTURE
+
+31  Raleway font
+37  CSS reset
+50  Generals 
+73  Layout 
+105 Header
+107   └── Nav
+179   └── Form
+323 Main
+      └── Section hebergements
+362       ├── Div accomodations
+438       ├── Aside popular
+466   └── Section activities
+547 Footer
+578 Media queries
+      └── Cell phones
+580       ├── min-width: 320px and max-width: 479.98px
+598       ├── min-width: 480px and max-width: 687.98px
+616       ├── max-width: 687.98px
+      └── Tablets 
+731       ├── min-width: 688px and max-width: 991.98px  
+774       ├── max-width: 991.98px
+      └── Desktop
+877       ├── min-width: 992px and max-width: 1312px
+
+*/
+
+/*-------------------------------------------*\
+    Raleway font
+\*-------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
 
-/* CSS reset  */
-html, body {
+/*-------------------------------------------*\
+    CSS reset
+\*-------------------------------------------*/
+html,
+body {
     margin:0;
     padding:0;
     scroll-behavior: smooth;
@@ -12,7 +46,32 @@ html, body {
 }
 
 
-/**** Main flex box properties used for the layout ****/
+/*-------------------------------------------*\
+    Generals 
+\*-------------------------------------------*/
+ .container {
+    width: 93%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-------------------------------------------*\
+    Layout 
+\*-------------------------------------------*/
 .dflex {
     display: flex;
 }
@@ -42,28 +101,9 @@ html, body {
 }
 
 
-/**** Generals ****/
-.container {
-    width: 93%;
-    margin: auto;
-}
-
-h3 {
-    font-size: 0.9rem;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-/***** Header *****/
+/*-------------------------------------------*\  
+    Header -> Nav
+\*-------------------------------------------*/
 nav {
     box-sizing: border-box;
     padding: 0 3%;
@@ -89,10 +129,7 @@ nav img {
     padding-top: 28%;
 }
 
-.mobile {
-    display: none;
-}
-
+/* desktop menu: won't appear on smallest devices except for the sign-up link */
 .desktop {
     height: 100px;
     width: 32%;
@@ -128,17 +165,26 @@ nav img {
     font-weight: bold;
 }
 
+/* mobile menu: appears only on smallest devices (tablets and smaller) */
+.mobile {
+    display: none;
+}
+
 header h1 {
     margin: 115px 0 16px 0;
     font-size: 1.3rem;
 }
 
+/*-----------------------*\
+    Form
+\*-----------------------*/
 .searchbar {
     width: 420px;
     height: 50px;
     margin: 20px 0;
 }
 
+/* div with the geolocation icon  */
 .googlemaps {
     width: 12%;
     background-color: #F2F2F2;
@@ -151,7 +197,8 @@ header h1 {
     border: 2px solid #F2F2F2;
 }
 
-#search-city, .button-div button {
+#search-city,
+.button-div button {
     font-size: 1rem;
 }
 
@@ -159,7 +206,8 @@ header h1 {
     width: 32%;
 }
 
-.search-input input, .button-div button {
+.search-input input,
+.button-div button {
     width: 100%;
     height: 100%;
     border: none;
@@ -192,6 +240,7 @@ button:hover {
     opacity: 0.8;
 }
 
+/* button with the search icon on mobiles*/
 #button-mobile {
     display: none;
 }
@@ -215,6 +264,7 @@ button:hover {
 
 }
 
+/* div containing the filter icons */
 .filter div:first-child {
     width: 50px;
     height: 50px;
@@ -230,6 +280,7 @@ button:hover {
     color: #0065FC;
 }
 
+/* div containing the filter text */
 .filter div:last-child {
     border-radius: 30px;
     border: 2px solid #F2F2F2;
@@ -267,8 +318,10 @@ button:hover {
     vertical-align: baseline;
 }
 
-/***** Main -> accomodation/popular *****/
 
+/*-------------------------------------------*\
+    Main -> hebergements
+\*-------------------------------------------*/
 main {
     width: 93%;
     margin: auto;
@@ -278,16 +331,19 @@ main h2 {
     margin: 0;
 }
 
-.accomodations, .popular {
+.accomodations,
+.popular {
     padding: 45px 30px 0 30px;
     background-color:#F2F2F2;
     border-radius: 20px;
 }
 
-.cards-accomodation, .cards-popular {
+.cards-accomodation,
+.cards-popular {
     margin-top: 25px;
 }
 
+/* all the cards in hebergements section (accomodation + popular) */
 #hebergements a:not(#displaymore) {
     color: black;
     background-color: white;
@@ -298,36 +354,13 @@ main h2 {
     transition: box-shadow 150ms ease-in-out;
 }
 
-#hebergements a:not(#displaymore):hover, #popular a:hover {
+#hebergements a:not(#displaymore):hover {
     box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
 }
 
-#hebergements h3 {
-    margin: 5px 0 5px 0;
-}
-
-.card-details {
-    padding: 3% 0 0 5%;
-
-}
-
-.card-details p {
-    margin: 5px 0;
-    font-size: 0.8rem;
-}
-
-.thumbnail {
-    background-size: cover;
-    background-position: center;
-}
-
-.stars {
-    margin: 5px 0 0 0;
-    font-size: 0.7rem;
-    color: #0065FC;
-}
-
-
+/*-----------------------*\
+    Accomodation div
+\*-----------------------*/
 .accomodations {
     width: 59%;
 }
@@ -337,6 +370,7 @@ main h2 {
     justify-content: space-between;
 }
 
+/* represents one card */
 .cards-accomodation a {
     width: 29%;
 }
@@ -346,45 +380,67 @@ main h2 {
     border-radius: 20px 20px 0 0;
 }
 
-#cannebiere {
-    background-image:url(assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+.thumbnail {
+    background-size: cover;
+    background-position: center;
 }
 
-#port {
-    background-image:url(assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+.card-details {
+    padding: 3% 0 0 5%;
 }
 
-#mouettes {
-    background-image:url(assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+#hebergements h3 {
+    margin: 5px 0 5px 0;
 }
 
-#mer {
-    background-image:url(assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+.card-details p {
+    margin: 5px 0;
+    font-size: 0.8rem;
 }
 
-#panier {
-    background-image:url(assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+.stars {
+    margin: 5px 0 0 0;
+    font-size: 0.7rem;
+    color: #0065FC;
 }
 
-#amina {
-    background-image:url(assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+/* background images of accomodation div */
+#auberge-cannebiere {
+    background-image:url('assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
 }
 
+#hotel-port {
+    background-image:url('assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+}
 
+#hotel-mouettes {
+    background-image:url('assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+}
+
+#hotel-mer{
+    background-image:url('assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+}
+
+#auberge-panier {
+    background-image:url('assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+}
+
+#hotel-amina {
+    background-image:url('assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+}
+
+/* uncolored stars */
 .card-details span {
     color: #d3d3d3;
 }
 
-#displaymore {
-    background-color: transparent;
-}
-
+/*-----------------------*\
+    Popular div
+\*-----------------------*/
 .popular {
     width: 28%;
     padding-top: 45px;
 }
-
-/* overflow-wrap: break-word; */
 
 .thumbnail-popular {
     min-width: 38%;
@@ -392,21 +448,23 @@ main h2 {
     border-radius: 20px 0 0 20px;
 }
 
-#soleil {
-    background-image:url(assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+/* thumbnail background images */
+#hotel-soleil {
+    background-image:url('assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 }
 
-#eau {
-    background-image:url(assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+#coeur-eau {
+    background-image:url('assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
 }
 
-#bleu {
-    background-image:url(assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+#tout-bleu {
+    background-image:url('assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 
 
-/***** Main -> activities *****/
-
+/*-----------------------*\
+    Main -> activities
+\*-----------------------*/
 #activities {
     padding: 45px 0;
 }
@@ -417,6 +475,7 @@ main h2 {
     margin-top: 25px;
 }
 
+/* all the cards in activities section */
 #activities a {
     display: inline-block;
     width: 100%;
@@ -429,6 +488,7 @@ main h2 {
     box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
 }
 
+/* groups two small columns */
 .cols {
     width: 48%;
 }
@@ -437,6 +497,7 @@ main h2 {
     width: 46%;
 }
 
+/* left col inside cols */
 .col-left {
     height: 100%;
 }
@@ -449,46 +510,48 @@ main h2 {
     padding-left: 5%;
 }
 
-
+/* thumbnail background images*/
 #vieux-port {
     height: 390px;
-    background-image:url(assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image:url('assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
 }
 
-#fort {
+#fort-pomegues {
    height: 180px;
-   background-image:url(assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+   background-image:url('assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
 }
 
-#ile {
+#ile-frioul {
     height: 115px;
-    background-image:url(assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-image:url('assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
 }
 
-#parc {
+#parc-calanques {
     height: 390px;
     filter: brightness(1.4);
-    background-image:url(assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image:url('assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
 }
 
-#dame {
+#dame-garde {
     height: 142px;
-    background-image:url(assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-image:url('assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
 }
 
-#longchamp {
+#parc-longchamp {
     height: 153px;
-    background-image:url(assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image:url('assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
 }
 
 
-/***** Footer *****/
-
+/*-------------------------------------------*\
+    Footer
+\*-------------------------------------------*/
 footer {
     background-color: #F2F2F2;
     padding: 45px 0;
 }
 
+/* three cols of footer */
 .footer-col {
     width: 33.3%;
 }
@@ -510,34 +573,51 @@ footer li:hover {
     padding-bottom: 0;
 }
 
+
+/*-------------------------------------------*\
+    Media queries
+\*-------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 479.98px) {
 
+    /* accomodations */
     .thumbnail-accomodation {
         height: 130px;
     }
 
-    #vieux-port, #fort, #ile, #parc, #dame, #longchamp {
+    /* activities */
+    #vieux-port,
+    #fort-pomegues,
+    #ile-frioul,
+    #parc-calanques,
+    #dame-garde,
+    #parc-longchamp {
         height: 170px;
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 687.98px) {
 
+    /* accomodations */
     .thumbnail-accomodation {
         height: 180px;
     }
 
-    #vieux-port, #fort, #ile, #parc, #dame, #longchamp {
+    /* activities */
+    #vieux-port,
+    #fort-pomegues,
+    #ile-frioul,
+    #parc-calanques,
+    #dame-garde,
+    #parc-longchamp {
         height: 225px;
     }
-
 }
-
 
 @media only screen and (max-width: 687.98px) {
 
-    /**** Header Media queries ****/
+    /* codes for valid rules for all mobiles */
 
+    /* header */
     nav {
         padding: 0;
     }
@@ -584,7 +664,8 @@ footer li:hover {
         width: 50px;
     }
 
-    #search-city, .button-div button {
+    #search-city,
+    .button-div button {
         font-size: 1rem;
     }
 
@@ -596,16 +677,7 @@ footer li:hover {
         display: block;
     }
 
-    /**** Main -> accomodation/popular Media queries ****/
-
-    .thumbnail-accomodation {
-        background-position-y: 65%;
-    }
-    
-    .card-details, #activities h3 {
-        padding: 1% 0 1% 5%;
-    }
-
+    /* main -> hebergements */
     #hebergements a {
         width: 100%;
     }
@@ -614,8 +686,16 @@ footer li:hover {
         font-size: 0.9rem;
     }
 
-    /**** Main -> activities Media queries ****/
+    .thumbnail-accomodation {
+        background-position-y: 65%;
+    }
+    
+    .card-details,
+    #activities h3 {
+        padding: 1% 0 1% 5%;
+    }
 
+    /* main -> activities */
     .cols {
         width: 100%;
         flex-wrap: wrap;
@@ -638,8 +718,7 @@ footer li:hover {
         height: 135px;
     }
 
-    /**** Footer ****/
-
+    /* Footer */
     footer .container {
         flex-wrap: wrap;
     }
@@ -647,13 +726,11 @@ footer li:hover {
     .footer-col {
         width: 100%;
     }
-
 }
 
 @media only screen and (min-width: 688px) and (max-width: 991.98px) {
 
-    /**** Header Media queries ****/
-
+    /* header */
     nav > li a {
         line-height: 35px;
     }
@@ -666,7 +743,6 @@ footer li:hover {
         line-height: 85px;
     }
     
-    
     .mobile > li a {
         line-height:66px;
     }
@@ -675,8 +751,7 @@ footer li:hover {
         margin-top: 194px;
     }
 
-    /**** Main -> accomodation/popular Media queries ****/
-
+    /* main -> hebergements */
     .card-details p  {
         font-size: 0.7rem;
     }
@@ -689,8 +764,7 @@ footer li:hover {
         width: 30%;
     }
 
-    /**** Main -> activities Media queries ****/
-
+    /* main -> activities */
     .cols {
         width: 100%;
         margin-bottom: 5%;
@@ -699,8 +773,7 @@ footer li:hover {
 
 @media only screen and (max-width: 991.98px) {
 
-    /**** Header Media queries ****/
-    
+    /* header */
     nav {
         flex-wrap: wrap;
     }
@@ -709,7 +782,8 @@ footer li:hover {
         justify-content: flex-end;
     }
 
-    .desktop li:first-child, .desktop li:nth-child(2) {
+    .desktop li:first-child,
+    .desktop li:nth-child(2) {
         display: none;
     }
 
@@ -757,17 +831,18 @@ footer li:hover {
         margin: 0 2% 2% 0;
     }
 
-    /**** Main -> accomodation/popular Media queries ****/
-
+    /* main -> hebergements */
     main {
         width: 100%;
     }
 
+    /* places the popular div above the accommodation one */
     #hebergements {
         flex-direction: column-reverse;
     }
 
-    .accomodations, .popular {
+    .accomodations,
+    .popular {
         box-sizing: border-box;
         padding: 45px 5%;
         border-radius: 0;
@@ -788,14 +863,12 @@ footer li:hover {
         justify-content: space-between;
     }
 
-    /**** Main -> activities Media queries ****/
-
+    /* main -> activities */
     #activities {
         padding: 45px 5%;
     }
 
-    /**** Footer ****/
-
+    /* footer */
     footer li {
         font-size: 0.9rem;
     }
@@ -803,14 +876,12 @@ footer li:hover {
 
 @media only screen and (min-width: 992px) and (max-width: 1312px) {
 
-    /**** Header Media queries ****/
-
+    /* header */
     .desktop {
         width: 40%;
     }
 
-    /**** Main -> accomodation/popular Media queries ****/
-
+    /* main -> hebergements */
     .accomodations {
         width: 59%;
     }
@@ -819,7 +890,8 @@ footer li:hover {
         width: 26%;
     }
     
-    #hebergements h3, #activities h3 {
+    #hebergements h3,
+    #activities h3 {
         font-size: 0.8rem;
     }
 
