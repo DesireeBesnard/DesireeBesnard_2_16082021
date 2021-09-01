@@ -30,6 +30,15 @@ The user must be able to:
 - View the optimal layout for the site depending on their device's screen size (responsive website)
 
 ### Links
-[Desktop template](#).  
-[Mobile template](#).  
-[Live Site](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
+Desktop template: [Here](#){:target="_blank"}  
+Mobile template: [Here](#){:target="_blank"}  
+Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/){:target="_blank"}  
+
+## My process
+
+### Built with
+- Semantic HTML5
+- Font Awesome (icons)
+- CSS
+- Flexbox (Layout)
+- Desktop-first workflow
