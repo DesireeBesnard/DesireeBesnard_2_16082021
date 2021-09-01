@@ -2,7 +2,7 @@
 
 ![Reservia project thumbnail](assets/readmethumbnail.jpg)
 
-Reservia is a small agency that offers a vacation planning tool. Their site should allow users to find accommodation and activities in the city of their choice. The aim of this project is to make a prototype by integrating in HTML and CSS the template provided by the designer.
+Reservia is a small agency that offers a vacation planning tool. Their site should allow users to find accommodation and activities in the city of their choice. The aim of this project is to make a prototype by integrating in HTML and CSS the mockup provided by the designer.
 
 <details open>
 <summary>Table of contents</summary>
@@ -68,4 +68,13 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 ##### Commits
 > *(See last commits)* git log commit  
 > *(Correct last commit)* git commit --amend -m "new message"  
-> *(If forgotten  file in last commit)* git add file then git commit --amend --no-edit  
+> *(If forgotten file in last commit)* git add file then git commit --amend --no-edit  
+
+##### Deploy a website on GitHub Pages
+
+#### Integrate content according to a mockup
+- Reproduce a structure in HTML5
+- Add metatags
+- Layout an HTML page with CSS;
+
+#### Implement a responsive interface (Media queries)
