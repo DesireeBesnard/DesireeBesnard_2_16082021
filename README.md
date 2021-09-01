@@ -15,7 +15,7 @@ Reservia is a small agency that offers a vacation planning tool. Their site shou
     - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
     - [Usefull resources](#usefull-resources)
-3. [Author](#author)
+3. [Authors](#authors)
 </details>
 
 ## 1. Overview
@@ -30,8 +30,8 @@ The user must be able to:
 - View the optimal layout for the site depending on their device's screen size (responsive website)
 
 ### 1.2 Links
-Desktop template: [Here](#)  
-Mobile template: [Here](#)  
+Desktop template: [Here](assets/desktop - 1.png)  
+Mobile template: [Here](assets/iPhone 8 - 1.png)  
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ## 2. My process
@@ -74,7 +74,20 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 #### 2.2.2 Integrate content according to a mockup
 - Reproduce a structure in HTML5
-- Add metatags
 - Layout an HTML page with CSS;
 
-#### 2.2.3 Implement a responsive interface (Media queries)
+#### 2.2.3 Implement a responsive interface (Media queries for cell phones, and tablets)
+
+### 2.3 Continued development
+- Define css variables for better visibility and easier maintenance
+- Use CSS Grid instead of Flexbox
+- Try a mobile-first workflow
+
+### 2.4 Useful ressources
+- [GitHub Guides](https://guides.github.com/) - This helped me understand the Git workflow, learn Markdown and document my projects
+- [The Art of Comments](https://css-tricks.com/the-art-of-comments/) - This article allowed me to understand the importance of comments and gives keys to ensuring their relevance.
+- [What media query breakpoints should you use? ](https://coder-coder.com/media-query-breakpoints/)
+
+## 3. Authors
+- Website - [Désirée Besnard](https://github.com/DesireeBesnard)
+- MockUp - [OpenClassRooms](https://openclassrooms.com/fr/)
