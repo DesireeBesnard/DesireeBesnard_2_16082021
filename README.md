@@ -30,8 +30,8 @@ The user must be able to:
 - View the optimal layout for the site depending on their device's screen size (responsive website)
 
 ### Links
-Desktop template: [Here](#)
-Mobile template: [Here](#)
+Desktop template: [Here](#)  
+Mobile template: [Here](#)  
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ## My process
@@ -48,24 +48,24 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 #### Use of the Git version management system
 
 ##### Configuration
-> git config --global user.name "John Doe"
+> git config --global user.name "John Doe"  
 > git config --global user.email johndoe@example.com
 
 ##### Main commands
-> git init
-> git remote add origin url
-> git add
-> git commit -m "message"
+> git init  
+> git remote add origin url  
+> git add  
+> git commit -m "message"  
 > git push origin main/branch
 
 ##### Branches
-> *(See branches)* git branch
-> *(Switch branch)* git checkout branchname
-> *(Merge branch)* git merge branchname
-> *(Remove local)* git branch -d branchname
-> *(Remove remote)* git branch -D branchname
+> *(See branches)* git branch  
+> *(Switch branch)* git checkout branchname  
+> *(Merge branch)* git merge branchname  
+> *(Remove local)* git branch -d branchname  
+> *(Remove remote)* git branch -D branchname  
 
 ##### Commits
-> *(See last commits)* git log commit
-> *(Correct last commit)* git commit --amend -m "new message"
-> *(If forgotten  file in last commit)* git add file then git commit --amend --no-edit
+> *(See last commits)* git log commit  
+> *(Correct last commit)* git commit --amend -m "new message"  
+> *(If forgotten  file in last commit)* git add file then git commit --amend --no-edit  
