@@ -80,8 +80,10 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ### Continued development
 - Define css variables for better visibility and easier maintenance
+- Use a CSS preprocessor like Sass or Less
 - Use CSS Grid instead of Flexbox
 - Try a mobile-first workflow
+- Build the site using a framework such as React to create components and avoid redundancies (cards)
 
 ### Useful ressources
 - [GitHub Guides](https://guides.github.com/) - This helped me understand the Git workflow, learn Markdown and document my projects
