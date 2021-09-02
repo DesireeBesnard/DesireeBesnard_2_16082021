@@ -80,7 +80,7 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ### Continued development
 - Define css variables for better visibility and easier maintenance
-- Use a CSS preprocessor like Sass or Less
+- Use a CSS preprocessor like [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
 - Use CSS Grid instead of Flexbox
 - Try a mobile-first workflow
 - Build the site using a framework such as React to create components and avoid redundancies (cards)
