@@ -30,8 +30,8 @@ The user must be able to:
 - View the optimal layout for the site depending on their device's screen size (responsive website)
 
 ### Links
-Desktop mockup: [Here](https://github.com/DesireeBesnard/DesireeBesnard_2_16082021/blob/main/assets/desktop-1.png)  
-Mobile mockup: [Here](https://github.com/DesireeBesnard/DesireeBesnard_2_16082021/blob/main/assets/iphone8-1.png)  
+Desktop mockup: [Here](assets/mockup/desktop-1.png)  
+Mobile mockup: [Here](assets/mockup/iphone8-1.png)  
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ## My process
