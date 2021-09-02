@@ -86,7 +86,8 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 ### Useful ressources
 - [GitHub Guides](https://guides.github.com/) - This helped me understand the Git workflow, learn Markdown and document my projects
 - [The Art of Comments](https://css-tricks.com/the-art-of-comments/) - This article allowed me to understand the importance of comments and gives keys to ensuring their relevance.
-- [What media query breakpoints should you use? ](https://coder-coder.com/media-query-breakpoints/)
+- [What media query breakpoints should you use?](https://coder-coder.com/media-query-breakpoints/)
+- [12 Useful Open Graph Meta Tag Types for Facebook and Twitter](https://neilpatel.com/blog/open-graph-meta-tags/)
 
 ## Authors
 - Website - [Désirée Besnard](https://github.com/DesireeBesnard)
