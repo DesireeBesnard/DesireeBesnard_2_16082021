@@ -885,10 +885,18 @@ footer li:hover {
     .popular {
         width: 26%;
     }
+
+    .thumbnail-accomodation {
+        height: 90px;
+    }
     
     #hebergements h3,
     #activities h3 {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .card-details p {
+        font-size: 0.75rem;
     }
 
 }
