@@ -230,6 +230,7 @@ button {
     color: white;
     border-radius: 0 15px 15px 0;
     transition: opacity 150ms ease-in-out;
+    cursor: pointer;
 }
 
 button:hover {
