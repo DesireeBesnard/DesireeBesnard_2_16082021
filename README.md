@@ -1,6 +1,6 @@
 # Reservia - Vacation planning tool 
 
-![Reservia project thumbnail](assets/readmethumbnail.jpg)
+![Reservia project thumbnail](src/readmethumbnail.jpg)
 
 Reservia is a small agency that offers a vacation planning tool. Their site should allow users to find accommodation and activities in the city of their choice. The aim of this project is to make a prototype by integrating in HTML and CSS the mockup provided by the designer.
 
@@ -30,8 +30,8 @@ The user must be able to:
 - View the optimal layout for the site depending on their device's screen size (responsive website)
 
 ### Links
-Desktop mockup: [Here](assets/mockup/desktop-1.png)  
-Mobile mockup: [Here](assets/mockup/iphone8-1.png)  
+Desktop mockup: [Here](src/mockup/desktop-1.png)  
+Mobile mockup: [Here](src/mockup/iphone8-1.png)  
 Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 ## My process
