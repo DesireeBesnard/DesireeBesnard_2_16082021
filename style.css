@@ -215,8 +215,7 @@ button:hover {
     opacity: 0.8;
 }
 
-/* button with the search icon on mobiles*/
-#button-mobile {
+button .fas {
     display: none;
 }
 
@@ -605,17 +604,17 @@ footer li:hover {
         width: 50px;
     }
 
-    #search-city,
-    .button-div button {
-        font-size: 1rem;
-    }
-
-    #desktopButton {
+    button span {
         display: none;
     }
 
-    #button-mobile {
+    button .fas {
         display: block;
+    }
+
+    #search-city,
+    .button-div button {
+        font-size: 1rem;
     }
 
     /* main -> hebergements */
