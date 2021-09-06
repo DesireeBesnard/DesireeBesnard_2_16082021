@@ -77,6 +77,10 @@ a {
     flex-direction: column;
 }
 
+.jc-fe {
+    justify-content: flex-end;
+}
+
 .jc-sb {
     justify-content: space-between;
 }
@@ -109,61 +113,35 @@ nav {
     width: 100%;
     background-color: white;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav > li a {
-    display: block;
-    line-height:65px;
+#logo {
+    padding: 0 1rem 1rem 0;
+    margin-right: auto;
 }
 
 nav img {
-    padding-top: 33%;
+    padding-top: 15%;
 }
 
-/* desktop menu: won't appear on smallest devices except for the sign-up link */
-.desktop {
-    height: 100px;
-    width: 32%;
-    margin: 0;
-    padding: 0;
+.subnav {
+    display: flex;
 }
 
-.desktop > li {
-    height: 100px;
-    width: 33%;
-}
-
-.desktop > li:first-child {
-    margin-right: 6%;
-}
-
-.desktop > li a {
-    display: block;
-    width: 100%;
-    line-height:100px;
-    text-align: center;
-    color: black;
+nav a:not(#logo, #sign-up) {
+    padding: 2rem;
     border-top: solid 3px transparent;
-    transition: border-top 200ms ease;
 }
 
-.desktop > li a:not(#sign-up):hover {
+nav a:not(#logo, #sign-up):hover {
     border-top: solid 3px #0065FC;
 }
 
 #sign-up {
+    padding: 2rem 0 2rem 2rem;
     color:#0065FC;
     font-weight: bold;
-}
-
-/* mobile menu: appears only on smallest devices (tablets and smaller) */
-.mobile {
-    display: none;
 }
 
 header h1 {
@@ -611,40 +589,6 @@ footer li:hover {
     /* codes for valid rules for all mobiles */
 
     /* header */
-    nav {
-        padding: 0;
-    }
-
-    nav ul {
-        height: 60px;
-        padding-left: 3%;
-    }
-
-    nav > li a {
-        line-height: 41px;
-    }
-
-    nav img {
-        padding: 10% 0 0 8%;
-    }
-
-    .desktop {
-        height: 60px;
-        padding-right: 3%;
-    }
-    
-    .desktop > li {
-        width: 70%;
-    }
-
-    .desktop > li a {
-        text-align: right;
-    }
-
-    .mobile > li a {
-        line-height: 60px;
-    }
-
     header h1 {
         margin-top: 160px;
     }
@@ -728,22 +672,6 @@ footer li:hover {
 @media only screen and (min-width: 688px) and (max-width: 991.98px) {
 
     /* header */
-    nav > li a {
-        line-height: 35px;
-    }
-
-    .desktop {
-        height: 85px;
-    }
-
-    .desktop > li a {
-        line-height: 85px;
-    }
-    
-    .mobile > li a {
-        line-height:66px;
-    }
-
     header h1 {
         margin-top: 194px;
     }
@@ -773,47 +701,37 @@ footer li:hover {
     /* header */
     nav {
         flex-wrap: wrap;
-    }
-    
-    .desktop {
-        justify-content: flex-end;
-    }
-
-    .desktop li:first-child,
-    .desktop li:nth-child(2) {
-        display: none;
-    }
-
-    .desktop > li a {
-        border: none;
-    }
-
-    .desktop > li a:hover {
-        border: none;
-    }
-
-    .mobile {
-        display: flex;
-        width: 100%;
-        margin: 0;
         padding: 0;
     }
 
-    .mobile li {
-        width: 50%;
+    #logo {
+        padding: 0 1rem 1rem 3%;
     }
 
-    .mobile > li a {
-        display: block;
-        width: 100%;
+    .subnav {
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .subnav a {
+        flex-basis: 50%;
         text-align: center;
-        color: black;
-        border-bottom: solid 3px #F2F2F2;
-        transition: border-bottom 200ms ease;
     }
 
-    .mobile > li a:hover {
-        border-bottom: solid 3px #0065FC;
+    nav a:not(#logo, #sign-up) {
+        padding: 1rem;
+        border-top: none;
+        border-bottom: 3px solid #d3d3d3;
+    }
+    
+    nav a:not(#logo, #sign-up):hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    
+    #sign-up {
+        padding: 2rem 3% 2rem 2rem;
     }
 
     .searchbar {
@@ -872,12 +790,7 @@ footer li:hover {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1312px) {
-
-    /* header */
-    .desktop {
-        width: 40%;
-    }
-
+    
     /* main -> hebergements */
     .accomodations {
         width: 59%;
