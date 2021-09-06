@@ -402,27 +402,27 @@ main h2 {
 
 /* background images of accomodation div */
 #auberge-cannebiere {
-    background-image:url('src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    background-image:url('src/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
 }
 
 #hotel-port {
-    background-image:url('src/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    background-image:url('src/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
 }
 
 #hotel-mouettes {
-    background-image:url('src/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+    background-image:url('src/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg');
 }
 
 #hotel-mer{
-    background-image:url('src/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+    background-image:url('src/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
 }
 
 #auberge-panier {
-    background-image:url('src/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+    background-image:url('src/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
 }
 
 #hotel-amina {
-    background-image:url('src/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    background-image:url('src/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
 }
 
 /* uncolored stars */
@@ -898,6 +898,26 @@ footer li:hover {
 
     .card-details p {
         font-size: 0.75rem;
+    }
+
+    .cols {
+        width: 48.5%;
+    }
+
+    .col {
+        width: 47%;
+    }
+
+    #fort-pomegues {
+        height: 160px;
+    }
+
+    #ile-frioul {
+        height: 130px;
+    }
+
+    #dame-garde {
+        height: 132px;
     }
 
 }
