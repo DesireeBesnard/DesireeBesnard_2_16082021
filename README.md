@@ -74,7 +74,7 @@ Live Site: [Here](https://desireebesnard.github.io/DesireeBesnard_2_16082021/)
 
 #### Integrate content according to a mockup
 - Reproduce a structure in HTML5
-- Layout an HTML page with CSS;
+- Layout an HTML page with CSS
 
 #### Implement a responsive interface (Media queries for cell phones, and tablets)
 

@@ -1,7 +1,7 @@
 /** 
 CSS FILE STRUCTURE
 
-31  Raleway font
+31  Font import
 36  CSS reset
 48  Generals 
 70  Layout 
@@ -20,15 +20,15 @@ CSS FILE STRUCTURE
 590       ├── min-width: 480px and max-width: 687.98px
 608       ├── max-width: 687.98px
       └── Tablets 
-723       ├── min-width: 688px and max-width: 991.98px  
-766       ├── max-width: 991.98px
+727       ├── min-width: 688px and max-width: 991.98px  
+770       ├── max-width: 991.98px
       └── Desktop
-869       ├── min-width: 992px and max-width: 1312px
+873       ├── min-width: 992px and max-width: 1312px
 
 */
 
 /*-------------------------------------------*\
-    Raleway font
+    Import font (Raleway)
 \*-------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
@@ -430,7 +430,7 @@ main h2 {
 }
 
 /*-----------------------*\
-    Popular div
+    Aside Popular div
 \*-----------------------*/
 .popular {
     width: 28%;
