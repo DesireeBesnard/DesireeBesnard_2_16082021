@@ -447,44 +447,38 @@ main h2 {
     height: 100%;
 }
 
-#activities .thumbnail {
+/* activity thumbnails*/
+.thumbnail-activity img {
     border-radius: 20px 20px 0 0;
 }
 
-#activities h3 {
-    padding-left: 5%;
-}
-
-/* thumbnail background images*/
 #vieux-port {
     height: 390px;
-    background-image:url('src/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
 }
 
 #fort-pomegues {
    height: 180px;
-   background-image:url('src/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
 }
 
 #ile-frioul {
     height: 115px;
-    background-image:url('src/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
 }
 
 #parc-calanques {
     height: 390px;
     filter: brightness(1.4);
-    background-image:url('src/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
 }
 
 #dame-garde {
     height: 142px;
-    background-image:url('src/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
 }
 
 #parc-longchamp {
     height: 153px;
-    background-image:url('src/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+}
+
+#activities h3 {
+    padding-left: 5%;
 }
 
 /*-------------------------------------------*\
@@ -597,10 +591,6 @@ footer li:hover {
 
     #hebergements h3 {
         font-size: 0.9rem;
-    }
-
-    .thumbnail-accomodation {
-        background-position-y: 65%;
     }
     
     .card-details,
